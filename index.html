@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Pool</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Donation Pool DApp</h1>
+    </header>
+
+    <main>
+        <!-- Info Section -->
+        <section class="info-section">
+            <h2>Donation Info</h2>
+            <p><strong>Contract Address:</strong> <span id="contractAddress">Loading...</span></p>
+            <p><strong>Total Donations:</strong> <span id="totalDonations">0 ETH</span></p>
+            <p><strong>Your Donations:</strong> <span id="yourDonations">0 ETH</span></p>
+        </section>
+
+        <!-- Action Section -->
+        <section class="action-section">
+            <h2>Make a Donation</h2>
+            <button onclick="donate()">Donate 0.1 ETH</button>
+            <button class="withdraw" onclick="withdraw()">Withdraw Funds (Owner Only)</button>
+            <p id="statusMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Donation Pool. Built for transparency.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
